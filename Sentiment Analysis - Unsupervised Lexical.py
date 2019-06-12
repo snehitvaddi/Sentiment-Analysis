@@ -30,7 +30,7 @@ for review, sentiment in zip(test_reviews[sample_review_ids], test_sentiments[sa
     print('-'*60)
 
 
-# ## Predict sentiment for test dataset
+## Predict sentiment for test dataset
 sentiment_polarity = [afn.score(review) for review in test_reviews]
 predicted_sentiments = ['positive' if score >= 1.0 else 'negative' for score in sentiment_polarity]
 
