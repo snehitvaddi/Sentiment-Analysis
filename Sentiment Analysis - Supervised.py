@@ -62,6 +62,7 @@ meu.display_model_performance_metrics(true_labels=test_sentiments, predicted_lab
 
 
 # Logistic Regression model on TF-IDF features
+
 lr_tfidf_predictions = meu.train_predict_model(classifier=lr, 
                                                train_features=tv_train_features, train_labels=train_sentiments,
                                                test_features=tv_test_features, test_labels=test_sentiments)
